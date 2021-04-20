@@ -39,12 +39,12 @@
         <div class="form-title">
           <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
-        <p class="form__add">
+        <p class="form-add">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
         </p>
         <form class="form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
-            <ul class="form__name name-list">
+            <ul class="form__contacts name-list">
               <li class="name-list__item">
                 <label for="field-surname">Фамилия</label>
                 <input class="form__field" type="text" id="field-surname" placeholder="Укажите фамилию*">
@@ -59,9 +59,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="form__radio-checkbox">
             <legend>Ваши безбашенные достижения в путешествии</legend>
-            <ul class="form__achievments achievments-list">
+            <ul class="achievments-list">
               <li class="achievments-list__item">
                 <input class="form__checkbox" type="checkbox" id="checkbox-selfie" checked>
                 <label for="checkbox-selfie">Сделал селфи с акулой</label>
@@ -92,17 +92,17 @@
             <ul class="form__contacts contacts-list">
               <li class="contacts-list__item">
                 <label for="phone-field">Номер телефона</label>
-                <input class="form__contacts" type="tel" id="phone-field" placeholder="Номер, пожалуйста">
+                <input type="tel" id="phone-field" placeholder="Номер, пожалуйста">
               </li>
               <li class="contacts-list__item">
                 <label for="email-field">Адрес почты</label>
-                <input class="form__contacts" type="text" id="email-field" placeholder="Введите почту*">
+                <input type="text" id="email-field" placeholder="Введите почту*">
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="form__radio-checkbox">
             <legend>С каким приложением путешествовали?</legend>
-            <ul class="form__apps apps-list">
+            <ul class="apps-list">
               <li class="apps-list__item">
                 <input class="form__radio" type="radio" id="radio-iOS" checked>
                 <label for="radio-iOS">Pink для iOS</label>
@@ -117,7 +117,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="white-theme">
+          <fieldset class="form__textarea">
             <legend>Опишите свои эмоции</legend>
             <textarea class="form__text-field" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             <input class="form__button" type="submit" value="Отправить форму">

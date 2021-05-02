@@ -4,10 +4,27 @@
   background-color: @header-background;
   outline: 3px solid rgba(154, 127, 228, 0.7);
   outline-offset: -3px;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .page-header__logo {
   @media (min-width: @tablet-width) {
-  height: 109px;
+    height: 109px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 147px;
+  }
+}
+
+.nav-list {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
   }
 }

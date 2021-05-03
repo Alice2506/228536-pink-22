@@ -21,6 +21,23 @@
   }
 }
 
+
+.mobile-logo {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.tablet-logo {
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
 .nav-list {
   @media (min-width: @desktop-width) {
     display: flex;

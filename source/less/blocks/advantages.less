@@ -5,10 +5,49 @@
 
 .advantages__wrapper {
   background-color: @advantages-background;
+  display: grid;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
 }
 
 .advantages__offer {
   background-color: white;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+.advantages__iphone-img {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.advantages__list img {
+  @media (max-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.advantages__list {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-column-gap: 20px;
+  }
 }
 
 .advantages__list h3 {

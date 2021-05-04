@@ -1,0 +1,25 @@
+.reseach {
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.reseach__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.reseach__text h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.reseach__text a {
+  color: @contacts-links;
+  text-decoration: underline;
+}

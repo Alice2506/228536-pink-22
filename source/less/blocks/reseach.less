@@ -13,13 +13,38 @@
   grid-template-columns: 1fr 1fr;
 }
 
+.reseach__image {
+  @media (max-width: @desktop-width) {
+    width: 238px;
+    height: 276px;
+  }
+}
+
 .reseach__text h2 {
   font-size: 30px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 36px;
+
+  @media (min-width: @desktop-width) {
+    line-height: 30px;
+  }
+}
+
+.reseach__text p {
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
 }
 
 .reseach__text a {
   color: @contacts-links;
   text-decoration: underline;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
 }

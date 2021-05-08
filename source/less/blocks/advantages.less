@@ -10,6 +10,13 @@
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-content: space-between;
   }
 }
 
@@ -22,26 +29,51 @@
   }
 }
 
-.advantages__iphone-img {
+.image-grey {
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+
   @media (min-width: @tablet-width) {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    display: none;
   }
 
   @media (min-width: @desktop-width) {
-    display: none;
+    display: block;
   }
 }
 
-.advantages__list img {
-  @media (max-width: @tablet-width) {
+.image-pink {
+  @media (min-width: @mobile-width) {
     display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.image-smile {
+  @media (max-width: @tablet-width) {
+    width: 157px;
+    height: 320px;
+  }
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 268px;
+    height: 547px;
   }
 }
 
 .advantages__list {
+  @media (min-width: @tablet-width) {
+
+  }
+
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -54,4 +86,18 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
+}
+
+.slogan {
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 68.09px;
+  }
 }

@@ -19,6 +19,18 @@
   }
 }
 
+.download-app__buttons {
+  @media (min-width: @mobile-width) and (max-width: @tablet-width) {
+    background-color: @download-app-background;
+    margin-top: 362px;
+  }
+
+  @media (min-width: @tablet-width) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
 .download-app__slogan {
   color: white;
 
@@ -46,7 +58,12 @@
 .download-app__wrapper {
   display: flex;
   flex-direction: column;
-  position: relative;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 .hand-image-mobile {

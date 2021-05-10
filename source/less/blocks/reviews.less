@@ -6,8 +6,40 @@
 .reviews__author-name {
   font-size: 18px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 30px;
   font-style: normal;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
+}
+
+.reviews__author-name span {
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.reviews__text {
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .reviews__item {

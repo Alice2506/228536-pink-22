@@ -77,15 +77,15 @@
             <img class="advantages-list__item image-grey" src="img/iphone-image-grey.png" alt="iphone-image" width="186" height="382">
             <img class="advantages-list__item image-pink" src="img/iphone-image-pink.png" alt="iphone-image" width="186" height="382">
             <img class="advantages-list__item image-smile" src="img/iphone-image-smile.png" alt="iphone-image" width="186" height="382">
-            <div class="advantages-list__forth-item">
+            <div class="advantages-list__forth-item advantages-list__item">
               <h3>Поднимает настроение</h3>
               <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </div>
-            <div class="advantages-list__fifth-item">
+            <div class="advantages-list__fifth-item advantages-list__item">
               <h3>Меняет мир вокруг</h3>
               <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </div>
-            <div class="advantages-list__sixth-item">
+            <div class="advantages-list__sixth-item advantages-list__item">
               <h3>Заводит новых друзей</h3>
               <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </div>
@@ -124,7 +124,7 @@
         <div class="prices__wrapper slider">
           <h2 class="visually-hidden">Цены</h2>
           <div class="prices__list slider__list">
-            <table class="prices__table">
+            <table class="prices__table mobile-table">
               <tr class="table-heading">
                 <th>
                   <span class="table-tariff">Стандарт</span><br>
@@ -141,6 +141,41 @@
                 <td class="table-option">Комментарии <img src="img/no.svg" alt="No" width="27" height="27"></td>
               </tr>
             </table>
+            <table class="prices__table tablet-table">
+              <tr class="table-heading">
+                <th class="empty"></th>
+                <th>
+                  <span class="table-tariff">База</span><br>
+                  <span class="table-price">1,99 USD</span>
+                </th>
+                <th>
+                  <span class="table-tariff">Стандарт</span><br>
+                  <span class="table-price">3,99 USD</span>
+                </th>
+                <th>
+                  <span class="table-tariff">Анлим</span><br>
+                  <span class="table-price">9,99 USD</span>
+                </th>
+              </tr>
+              <tr>
+                <td class="table-option">Розовый фильтр</td>
+                <td class="table-option mark"><img src="img/yes.svg" alt="Yes" width="31" height="21"></td>
+                <td class="table-option mark"><img src="img/yes.svg" alt="Yes" width="31" height="21"></td>
+                <td class="table-option mark"><img src="img/yes.svg" alt="Yes" width="31" height="21"></td>
+              </tr>
+              <tr>
+                <td class="table-option">Смайлики</td>
+                <td class="table-option mark"><img src="img/no.svg" alt="No" width="27" height="27"></td>
+                <td class="table-option mark"><img src="img/yes.svg" alt="Yes" width="31" height="21"></td>
+                <td class="table-option mark"><img src="img/yes.svg" alt="Yes" width="31" height="21"></td>
+              </tr>
+              <tr>
+                <td class="table-option">Комментарии</td>
+                <td class="table-option mark"><img src="img/no.svg" alt="No" width="27" height="27"></td>
+                <td class="table-option mark"><img src="img/no.svg" alt="No" width="27" height="27"></td>
+                <td class="table-option mark"><img src="img/yes.svg" alt="Yes" width="31" height="21"></td>
+              </tr>
+            </table>
           </div>
           <p class="prices__toggles slider__toggles">
             <button class="slider__toggle slider__toggle--current" type="button"></button>
@@ -153,19 +188,19 @@
         <div class="contacts__wrapper">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__slogan slogan">Остались вопросы? Свяжитесь с нами!</p>
-          <p class="contacts__info">
+          <p class="contacts__info phone">
             <span class="info">Звоните:</span><br>
             <a href="tel:+78125556666">+7 (812) 555-66-66</a>
           </p>
-          <p class="contacts__info">
+          <p class="contacts__info email">
             <span class="info">Пишите:</span><br>
             <a href="#">mail@htmlacademy.ru</a>
           </p>
-          <p class="contacts__info">
+          <p class="contacts__info contacts-adress">
             <span class="info">Приезжайте в гости:</span><br>
             <span class="adress">ул. Большая Конюшенная, 19/8</span>
           </p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253322!2d30.320858716115232!3d59.938716481876234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617480981925!5m2!1sru!2sru" width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253322!2d30.320858716115232!3d59.938716481876234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617480981925!5m2!1sru!2sru" width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </section>
     </main>

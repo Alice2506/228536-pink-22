@@ -6,6 +6,7 @@
 
 .prices__table {
   width: 100%;
+  border-collapse: collapse;
 }
 
 .table-heading {
@@ -35,35 +36,56 @@
   line-height: 30px;
   text-transform: uppercase;
   border: 2px solid #e5e5e5;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    text-transform: none;
+  }
 }
 
 .mark {
   text-align: center;
 }
 
-.mobile-table {
-  @media (max-width: @tablet-width) {
-    display: block;
-  }
+.empty {
+  background-color: @advantages-background;
 
-  @media (min-width: @tablet-width) {
-    display: none;
+  @media (max-width: @tablet-width) {
+    background-color: @price-header;
   }
 }
 
-.tablet-table {
+.prices__tablet {
   @media (max-width: @tablet-width) {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
   }
+}
 
-  @media (min-width: @tablet-width) {
-    display: block;
+.prices__mobile {
+  @media (min-width: @mobile-width) and (max-width: @tablet-width) {
     width: 100%;
   }
 }
 
-.empty {
-  background-color: @advantages-background;
+.yes-mark::after {
+  @media (max-width: @tablet-width) {
+    content: url("../img/yes.svg");
+    position: absolute;
+    right: 15px;
+  }
 }
 
+.no-mark::after {
+  @media (max-width: @tablet-width) {
+    content: url("../img/no.svg");
+    position: absolute;
+    right: 15px;
+  }
+}
 

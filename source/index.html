@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
-    <div class="page_wrapper">
+    <div class="page__wrapper">
     <header class="page-header">
       <a class="page-header__logo mobile-logo">
         <img src="img/pink_mobile-logo.svg" alt="Pink" width="74" height="23">
@@ -124,56 +124,42 @@
         <div class="prices__wrapper slider">
           <h2 class="visually-hidden">Цены</h2>
           <div class="prices__list slider__list">
-            <table class="prices__table mobile-table">
+            <table class="prices__table tablet-table">
               <tr class="table-heading">
-                <th>
+                <th class="empty prices__mobile">
                   <span class="table-tariff">Стандарт</span><br>
                   <span class="table-price">3,99 USD</span>
                 </th>
-              </tr>
-              <tr>
-                <td class="table-option">Розовый фильтр <img src="img/yes.svg" alt="Yes" width="31" height="21"></td>
-              </tr>
-              <tr>
-                <td class="table-option">Смайлики <img src="img/yes.svg" alt="Yes" width="31" height="21"></td>
-              </tr>
-              <tr>
-                <td class="table-option">Комментарии <img src="img/no.svg" alt="No" width="27" height="27"></td>
-              </tr>
-            </table>
-            <table class="prices__table tablet-table">
-              <tr class="table-heading">
-                <th class="empty"></th>
-                <th>
+                <th class="prices__tablet">
                   <span class="table-tariff">База</span><br>
                   <span class="table-price">1,99 USD</span>
                 </th>
-                <th>
+                <th class="prices__tablet">
                   <span class="table-tariff">Стандарт</span><br>
                   <span class="table-price">3,99 USD</span>
                 </th>
-                <th>
+                <th class="prices__tablet">
                   <span class="table-tariff">Анлим</span><br>
                   <span class="table-price">9,99 USD</span>
                 </th>
               </tr>
               <tr>
-                <td class="table-option">Розовый фильтр</td>
-                <td class="table-option mark"><img src="img/yes.svg" alt="Yes" width="31" height="21"></td>
-                <td class="table-option mark"><img src="img/yes.svg" alt="Yes" width="31" height="21"></td>
-                <td class="table-option mark"><img src="img/yes.svg" alt="Yes" width="31" height="21"></td>
+                <td class="table-option prices__mobile yes-mark">Розовый фильтр</td>
+                <td class="table-option mark prices__tablet"><img src="img/yes.svg" alt="Yes" width="31" height="21"></td>
+                <td class="table-option mark prices__tablet"><img src="img/yes.svg" alt="Yes" width="31" height="21"></td>
+                <td class="table-option mark prices__tablet"><img src="img/yes.svg" alt="Yes" width="31" height="21"></td>
               </tr>
               <tr>
-                <td class="table-option">Смайлики</td>
-                <td class="table-option mark"><img src="img/no.svg" alt="No" width="27" height="27"></td>
-                <td class="table-option mark"><img src="img/yes.svg" alt="Yes" width="31" height="21"></td>
-                <td class="table-option mark"><img src="img/yes.svg" alt="Yes" width="31" height="21"></td>
+                <td class="table-option prices__mobile yes-mark">Смайлики</td>
+                <td class="table-option mark prices__tablet"><img src="img/no.svg" alt="No" width="27" height="27"></td>
+                <td class="table-option mark prices__tablet"><img src="img/yes.svg" alt="Yes" width="31" height="21"></td>
+                <td class="table-option mark prices__tablet"><img src="img/yes.svg" alt="Yes" width="31" height="21"></td>
               </tr>
               <tr>
-                <td class="table-option">Комментарии</td>
-                <td class="table-option mark"><img src="img/no.svg" alt="No" width="27" height="27"></td>
-                <td class="table-option mark"><img src="img/no.svg" alt="No" width="27" height="27"></td>
-                <td class="table-option mark"><img src="img/yes.svg" alt="Yes" width="31" height="21"></td>
+                <td class="table-option prices__mobile no-mark">Комментарии</td>
+                <td class="table-option mark prices__tablet"><img src="img/no.svg" alt="No" width="27" height="27"></td>
+                <td class="table-option mark prices__tablet"><img src="img/no.svg" alt="No" width="27" height="27"></td>
+                <td class="table-option mark prices__tablet"><img src="img/yes.svg" alt="Yes" width="31" height="21"></td>
               </tr>
             </table>
           </div>

@@ -11,37 +11,39 @@
   <body class="page__body">
     <div class="page__wrapper">
       <header class="page-header">
-        <a class="page-header__logo mobile-logo">
-          <img src="img/pink_mobile-logo.svg" alt="Pink" width="74" height="23">
-        </a>
-        <a class="page-header__logo tablet-logo">
-          <img src="img/logotype-white-tablet.svg" alt="Pink" width="147" height="40">
-        </a>
-        <nav class="main-navigation">
-          <button class="main-navigation__toggle" type="button">
-            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20.8487 1.37761e-06L0 20.8487L2.15131 23L23 2.15131L20.8487 1.37761e-06Z" fill="white"/>
-              <path d="M2.15131 0L0 2.15131L20.8487 23L23 20.8487L2.15131 0Z" fill="white"/>
-            </svg>
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <div class="main-navigation__wrapper">
-            <ul class="main-navigation__list nav-list">
-              <li class="nav-list__item">
-                <a>Главная</a>
-              </li>
-              <li class="nav-list__item">
-                <a href="catalog.html">Фотографии</a>
-              </li>
-              <li class="nav-list__item">
-                <a href="form.html">Конкурс</a>
-              </li>
-              <li class="nav-list__item">
-                <a href="#">Htmlacademy</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <div class="page-header__wrapper">
+          <a class="page-header__logo mobile-logo">
+            <img src="img/pink_mobile-logo.svg" alt="Pink" width="74" height="23">
+          </a>
+          <a class="page-header__logo tablet-logo">
+            <img src="img/logotype-white-tablet.svg" alt="Pink" width="147" height="40">
+          </a>
+          <nav class="main-navigation">
+            <button class="main-navigation__toggle" type="button">
+              <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.8487 1.37761e-06L0 20.8487L2.15131 23L23 2.15131L20.8487 1.37761e-06Z" fill="white"/>
+                <path d="M2.15131 0L0 2.15131L20.8487 23L23 20.8487L2.15131 0Z" fill="white"/>
+              </svg>
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="main-navigation__wrapper">
+              <ul class="main-navigation__list nav-list">
+                <li class="nav-list__item">
+                  <a>Главная</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="catalog.html">Фотографии</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="form.html">Конкурс</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#">Htmlacademy</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </header>
       <main class="page-main">
         <h1 class="visually-hidden">Pink - приложение для обработки фотографий</h1>
@@ -67,12 +69,12 @@
           </div>
         </section>
         <section class="advantages">
+          <h2 class="visually-hidden">Наши преимущества</h2>
+          <div class="advantages__offer">
+            <p class="slogan">Устали от серости мегаполиса?</p>
+            <p class="slogan">Нам есть, что вам предложить!</p>
+          </div>
           <div class="advantages__wrapper">
-            <h2 class="visually-hidden">Наши преимущества</h2>
-            <div class="advantages__offer">
-              <p class="slogan">Устали от серости мегаполиса?</p>
-              <p class="slogan">Нам есть, что вам предложить!</p>
-            </div>
             <div class="advantages__list advantages-list">
               <img class="advantages-list__item image-grey" src="img/iphone-image-grey.png" alt="iphone-image" width="186" height="382">
               <img class="advantages-list__item image-pink" src="img/iphone-image-pink.png" alt="iphone-image" width="186" height="382">
@@ -121,6 +123,7 @@
           </div>
         </section>
         <section class="prices">
+          <div class="table-tariff-wrapper"></div>
           <div class="prices__wrapper slider">
             <h2 class="visually-hidden">Цены</h2>
             <div class="prices__list slider__list">
@@ -186,8 +189,8 @@
               <span class="info">Приезжайте в гости:</span><br>
               <span class="adress">ул. Большая Конюшенная, 19/8</span>
             </p>
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253322!2d30.320858716115232!3d59.938716481876234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617480981925!5m2!1sru!2sru" width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253322!2d30.320858716115232!3d59.938716481876234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617480981925!5m2!1sru!2sru" width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
       </main>
       <footer class="page-footer">

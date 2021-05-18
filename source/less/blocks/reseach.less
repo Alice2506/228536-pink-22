@@ -16,6 +16,16 @@
 .reseach__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    min-width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 940px;
+  }
 }
 
 .reseach__image {

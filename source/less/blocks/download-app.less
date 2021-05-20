@@ -1,127 +1,20 @@
 .download-app {
-  /*background-image: url("../img/back-mobile.png");
-  background-image: url("../img/hand-mobile.png");
-  background-repeat: no-repeat;
-  background-color: #1e394a;*/
   min-height: 462px;
-  outline: 3px solid rgba(236, 82, 198, 0.7);
-  outline-offset: -3px;
-  background: url(../img/hand-mobile.png) no-repeat center 176px, url(../img/back-mobile.png) no-repeat 100%;
-  background-color: #1e394a;
+  background: url("../img/hand-mobile.png") no-repeat bottom left,
+              url("../img/back-mobile.png") no-repeat;
+  background-size: auto, cover;
 
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    background: url(../img/hand-tablet.png) no-repeat center 176px, url(../img/back-tablet.png) no-repeat;
-    min-height: 729px;
-    width: 100%;
-    background-color: #1e394a;
+  @media (min-width: @tablet-width) {
+    min-height: 730px;
+    background: url("../img/hand-tablet.png") no-repeat bottom left,
+              url("../img/back-tablet.png") no-repeat;
+    background-size: auto, cover;
   }
 
   @media (min-width: @desktop-width) {
-    background: url(../img/hand-desktop.png) no-repeat center bottom, url(../img/back-desktop.png) no-repeat;
-    width: 100%;
     min-height: 853px;
-  }
-}
-
-.download-app__wrapper {
-  width: 280px;
-  margin: 0 auto;
-
-  @media (min-width: @tablet-width) {
-    min-width: 620px;
-  }
-
-  @media (min-width: @desktop-width) {
-    min-width: 940px;
-  }
-}
-
-.download-app__buttons {
-  @media (min-width: @mobile-width) and (max-width: @tablet-width) {
-    background-color: @download-app-background;
-    margin-top: 362px;
-  }
-
-  @media (min-width: @tablet-width) {
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-}
-
-.download-app__slogan {
-  color: white;
-  text-align: center;
-
-  @media (min-width: @tablet-width) {
-    font-size: 40px;
-    font-weight: 300;
-    line-height: 48px;
-  }
-
-  @media (min-width: @desktop-width) {
-    font-size: 50px;
-    font-weight: 300;
-    line-height: 68.09px;
-  }
-}
-
-.download-app__wrapper a {
-  color: white;
-}
-
-.download-app__wrapper p {
-  color: white;
-}
-
-.download-app__wrapper {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-}
-
-.hand-image-mobile {
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.hand-image-tablet {
-  position: absolute;
-
-  @media (min-width: @mobile-width) {
-    display: none;
-  }
-
-  @media (min-width: @tablet-width) {
-    display: block;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.hand-image-desktop {
-  position: absolute;
-
-  @media (min-width: @mobile-width) {
-    display: none;
-  }
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: block;
+    background: url("../img/hand-desktop.png") no-repeat bottom right,
+              url("../img/back-desktop.png") no-repeat;
+    background-size: auto, cover;
   }
 }
